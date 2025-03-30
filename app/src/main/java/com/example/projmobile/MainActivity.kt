@@ -52,9 +52,9 @@ class MainActivity : AppCompatActivity() {
             .setContentText("Você favoritou: ${ubs.nome_oficial}")
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
 
-        with(NotificationManagerCompat.from(this)) {
-                    notify(ubs.nome_oficial.hashCode(), builder.build())
-        }
+       // with(NotificationManagerCompat.from(this)) {
+                 //   notify(ubs.nome_oficial.hashCode(), builder.build())
+        //}
     }
     private fun salvarFavorito(ubsSelecionada: Ubs) {
         val db = AppDatabase.getDatabase(this)
